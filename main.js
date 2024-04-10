@@ -6,4 +6,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([-41.293056, 174.001944]).addTo(map);
-marker.bindPopup("<b>Morjen!</b><br>Zentrum Machteburch").openPopup();
+marker.bindPopup("<b>Morjen!</b><br>Machteburch").openPopup();

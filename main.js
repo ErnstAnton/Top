@@ -11,6 +11,8 @@ L.control.scale({
     imperial: false
 }).addTo(map);
 
+
+
 let jsonData = {
     "type": "FeatureCollection",
     "features": [
@@ -257,7 +259,7 @@ let jsonData = {
     ]
 }
 
-L.geoJSON(jsonPunkt, {}).bindPopup(function (layer) {
+L.geoJSON(jsonData, {}).bindPopup(function (layer) {
     return `
     <h2>${layer.feature.properties.name}<h2>
     <ul>

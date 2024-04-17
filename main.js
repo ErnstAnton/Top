@@ -13,7 +13,7 @@ L.control.scale({
 
 
 
-let jsonData = {
+let jsonPunkt = {
     "type": "FeatureCollection",
     "features": [
         {
@@ -259,7 +259,7 @@ let jsonData = {
     ]
 }
 
-L.geoJSON(jsonData, {}).bindPopup(function (layer) {
+L.geoJSON(jsonPunkt, {}).bindPopup(function (layer) {
     return `
     <h2>${layer.feature.properties.name}<h2>
     <ul>
